@@ -44,5 +44,14 @@ namespace Zoo.Classes
         {
             return $"{base.Eat()} some field mice!";
         }
+
+        /// <summary>
+        /// Tells the Owl object to hoot.
+        /// </summary>
+        /// <returns>Returns a string about the Owl object hooting.</returns>
+        public string Hoot()
+        {
+            return $"{this.Name} hoots ominously...";
+        }
     }
 }
