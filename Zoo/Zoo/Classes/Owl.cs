@@ -20,7 +20,7 @@ namespace Zoo.Classes
         /// Constructor method to instantiate a new Owl object.
         /// </summary>
         /// <param name="name">The name of the new Owl object.</param>
-        /// <param name="lifeSpan">The lifespan of the new Owl object.</param>
+        /// <param name="lifeSpan">The lifespan of the new Owl object in years.</param>
         public Owl(string name, int lifeSpan)
         {
             this.Name = name;

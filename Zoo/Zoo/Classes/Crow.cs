@@ -15,7 +15,7 @@ namespace Zoo.Classes
         /// Constructor method to instantiate a new Crow object.
         /// </summary>
         /// <param name="name">The name of the new Crow object.</param>
-        /// <param name="lifeSpan">The lifespan of the new Crow object.</param>
+        /// <param name="lifeSpan">The lifespan of the new Crow object in years.</param>
         /// <param name="color">The color of the new Crow object.</param>
         public Crow(string name, int lifeSpan, string color)
         {
