@@ -15,19 +15,19 @@ namespace Zoo
             Hound newHound = new Hound("Sam", 10);
             Labrador newLab = new Labrador("Bo", 12);
 
-            newFish.Swim();
+            Console.WriteLine(newFish.Swim());
 
-            newCrow.Fly();
+            Console.WriteLine(newCrow.Fly());
 
-            newOwl.Sleep();
+            Console.WriteLine(newOwl.Sleep());
 
-            newLeopard.PetHuman();
+            Console.WriteLine(newLeopard.PetHuman());
 
-            newLion.Purr();
+            Console.WriteLine(newLion.Purr());
 
-            newHound.Poop();
+            Console.WriteLine(newHound.Poop());
 
-            newLab.Bark();
+            Console.WriteLine(newLab.Bark());
         }
     }
 }
