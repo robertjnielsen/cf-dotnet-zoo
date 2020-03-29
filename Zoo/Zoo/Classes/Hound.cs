@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    public class Hound : Canine
+    public class Hound : Canine, ISleep, IPoop
     {
         /// <summary>
         /// Determines that the Hound object is not lazy.
@@ -47,6 +48,33 @@ namespace Zoo.Classes
         public override string Eat()
         {
             return $"{base.Eat()} but sooooo slooooowly...";
+        }
+
+        /// <summary>
+        /// Tells the Hound object to sleep.
+        /// </summary>
+        /// <returns>Returns a string about the Hound object sleeping.</returns>
+        public string Sleep()
+        {
+            return $"{this.Name} is sleeping, as always...";
+        }
+
+        /// <summary>
+        /// Tells the Hound object to wake up.
+        /// </summary>
+        /// <returns>Returns a string about the Hound object waking up.</returns>
+        public string WakeUp()
+        {
+            return $"{this.Name} refuses to wake up for long...";
+        }
+
+        /// <summary>
+        /// Tells the Hound object to poop.
+        /// </summary>
+        /// <returns>Returns a string about the Hound object pooping.</returns>
+        public string Poop()
+        {
+            return $"{this.Name} is pooping... All animals do it, get over it.";
         }
     }
 }

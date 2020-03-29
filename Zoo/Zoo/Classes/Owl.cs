@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    public class Owl : Bird
+    public class Owl : Bird, ISleep, IPoop
     {
         /// <summary>
         /// Determines that Owl objects are Nocturnal.
@@ -52,6 +53,33 @@ namespace Zoo.Classes
         public string Hoot()
         {
             return $"{this.Name} hoots ominously...";
+        }
+
+        /// <summary>
+        /// Tells the Owl object to sleep.
+        /// </summary>
+        /// <returns>Returns a string about the Owl object sleeping.</returns>
+        public string Sleep()
+        {
+            return $"{this.Name} is sleeping through the day...";
+        }
+
+        /// <summary>
+        /// Tells the Owl object to wake up.
+        /// </summary>
+        /// <returns>Returns a string about the Owl object waking up.</returns>
+        public string WakeUp()
+        {
+            return $"{this.Name} wakes up as the sun falls, preparing to hunt...";
+        }
+
+        /// <summary>
+        /// Tells the Owl object to poop.
+        /// </summary>
+        /// <returns>Returns a string about the Owl object pooping.</returns>
+        public string Poop()
+        {
+            return $"{this.Name} is both pooping, and regurgitating pellets. Gross!";
         }
     }
 }
