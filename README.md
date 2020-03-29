@@ -33,10 +33,22 @@ Once the solution has loaded, press `Ctrl + F5` on your keyboard, or `Debug` -> 
 ## Visuals
 
 #### Class Structure UML
-
 ![Class Structure UML](Assets/Images/CF401DotNetLab06.png)
 
+#### Screen Capture Of Zoo Running
+![Screen Capture Of Zoo Running](Assets/Images/ZooRunning.png)
+
 ## Change Log
+
+**1.4** - 20200329
+- Documentation completed to current version.
+
+**1.3** - 20200329
+- Tests completed.
+
+**1.2** - 20200329
+- Interfaces created / completed.
+- Classes completed.
 
 **1.1** - 20200325
 - Documentation started.
