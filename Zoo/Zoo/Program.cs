@@ -7,13 +7,27 @@ namespace Zoo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine();
+            Fish newFish = new Fish("Nemo", false, 4);
+            Crow newCrow = new Crow("Poe", 14, "black");
+            Owl newOwl = new Owl("Hedwig", 24);
+            Leopard newLeopard = new Leopard("Treecat", 11, true);
+            Lion newLion = new Lion("Alex", 16);
+            Hound newHound = new Hound("Sam", 10);
+            Labrador newLab = new Labrador("Bo", 12);
 
-            Fish guppy = new Fish("Bubbles", true, 2);
+            newFish.Swim();
 
-            Console.WriteLine($"{guppy.Eat()}");
-            Console.WriteLine($"{guppy.Swim()}");
+            newCrow.Fly();
+
+            newOwl.Sleep();
+
+            newLeopard.PetHuman();
+
+            newLion.Purr();
+
+            newHound.Poop();
+
+            newLab.Bark();
         }
     }
 }
